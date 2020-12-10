@@ -1,3 +1,9 @@
 {
-    "baseUrl": "src"    
+  "rootDir": "src",
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "*": ["*"]
+    }
+  }
 }

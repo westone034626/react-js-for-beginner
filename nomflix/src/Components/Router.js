@@ -4,12 +4,14 @@ import Home from "Routes/Home";
 import TV from "Routes/TV";
 import Search from "Routes/Search";
 import Detail from "Routes/Detail";
+import Header from "Components/Header";
 
 function Router() {
   return (
     <HashRouter>
+      <Header />
       <Switch>
-        <Route path="/" exact={true} component={Home} />
+        <Route path="/" exact component={Home} />
         <Route path="/tv" component={TV} />
         <Route path="/search" component={Search} />
         <Redirect from="*" to="/" />
